@@ -4,12 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>NEWS ARENA</title>
+    <style>
+        .button {
+          position: relative;
+          background-color: aliceblue; 
+          color: black; 
+          border-bottom: 3px solid red;
+          border-top:3px solid green ;
+          border-right: 3px solid blue;
+          font-size: 18px;
+          padding: 20px;
+          width: 200px;
+          text-align: center;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          text-decoration: none;
+          overflow: hidden;
+          cursor: pointer;
+         
+          margin-top: 50px;
+         
+        }
+        a{
+            margin: auto;
+        }
+        .button:after {
+          content: "";
+          background-color: #008CBA;
+          color: white;
+          display: block;
+          position: absolute;
+          padding-top: 300%;
+          padding-left: 350%;
+          margin-left: -20px!important;
+          margin-top: -120%;
+          opacity: 0;
+          transition: all 0.8s
+        }
+        
+        .button:active:after {
+          padding: 0;
+          margin: 0;
+          opacity: 1;
+          transition: 0s
+        }
+
+        body{
+            text-align: center;
+            display: flex;
+         flex-direction: column;
+            
+        }
+
+        </style>
         
         </head>
         <body onload="typeWriter()">
         
-        <p id="demo"> Click to see latest news</p>
         
         <a href="tesla.html"><button class="button">Tesla</button></a>
         <a href="apple.html"><button class="button">Apple</button></a>
